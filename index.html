@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>For Memsaab</title>
+<link rel="stylesheet" href="assets/fonts/melodrama.css" />
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/loader.css" />
+<link rel="stylesheet" href="css/questions.css" />
+<link rel="stylesheet" href="css/finale.css" />
+</head>
+<body>
+
+<!-- LOADER: cupid + heart -->
+<section class="screen loader active" id="loader">
+  <div class="sky">
+    <div class="cloud cloud-a"></div>
+    <div class="cloud cloud-b"></div>
+    <div class="cloud cloud-c"></div>
+  </div>
+
+  <div class="stage">
+    <div class="heart-target" id="heartTarget">
+      <svg viewBox="0 0 100 100" class="heart-svg">
+        <defs>
+          <radialGradient id="heartGrad" cx="35%" cy="35%" r="70%">
+            <stop offset="0%" stop-color="#ff9bb6" />
+            <stop offset="60%" stop-color="#ff3a6d" />
+            <stop offset="100%" stop-color="#a8123c" />
+          </radialGradient>
+        </defs>
+        <path d="M50,86 C18,64 8,42 22,26 C34,12 48,20 50,32 C52,20 66,12 78,26 C92,42 82,64 50,86 Z"
+              fill="url(#heartGrad)" stroke="#fff" stroke-width="1.5"/>
+      </svg>
+      <div class="heart-glow"></div>
+    </div>
+
+    <div class="cupid" id="cupid">
+      <div class="cupid-body">
+        <div class="halo"></div>
+        <div class="head"></div>
+        <div class="cheek cheek-l"></div>
+        <div class="cheek cheek-r"></div>
+        <div class="hair"></div>
+        <div class="wing wing-l"></div>
+        <div class="wing wing-r"></div>
+        <div class="torso"></div>
+        <div class="diaper"></div>
+        <div class="arm arm-l"></div>
+        <div class="arm arm-r"></div>
+        <div class="bow"></div>
+        <div class="arrow" id="cupidArrow"></div>
+      </div>
+    </div>
+
+    <div class="burst" id="burst"></div>
+  </div>
+
+  <div class="loader-caption">
+    <span>a little something for memsaab</span>
+  </div>
+</section>
+
+<!-- Q1 -->
+<section class="screen question" id="q1" data-bg="assets/images/pic1.jpg">
+  <div class="overlay"></div>
+  <div class="q-content">
+    <h1 class="q-title">Do you love me?</h1>
+    <div class="choices">
+      <button class="choice yes" data-action="next" data-target="q2">Yes</button>
+      <button class="choice no" data-action="restart">No</button>
+    </div>
+  </div>
+</section>
+
+<!-- Q2 -->
+<section class="screen question" id="q2" data-bg="assets/images/pic2.jpg">
+  <div class="overlay"></div>
+  <div class="q-content">
+    <h1 class="q-title">Do you wanna marry me?</h1>
+    <div class="choices">
+      <button class="choice yes" data-action="next" data-target="q3">Yes</button>
+      <button class="choice no" data-action="restart">No</button>
+    </div>
+  </div>
+</section>
+
+<!-- Q3 -->
+<section class="screen question" id="q3" data-bg="assets/images/pic3.jpg">
+  <div class="overlay"></div>
+  <div class="q-content">
+    <h1 class="q-title">Would you grant me the subscription for next month, please?</h1>
+    <div class="choices">
+      <button class="choice yes" data-action="next" data-target="finale">Yes</button>
+      <button class="choice no" data-action="restart">No</button>
+    </div>
+  </div>
+</section>
+
+<!-- FINALE -->
+<section class="screen finale" id="finale">
+  <canvas id="starsCanvas"></canvas>
+
+  <div class="scroll-wrap">
+    <div class="scroll" id="scroll">
+      <div class="scroll-cap top">
+        <div class="rod"></div>
+        <div class="knob left"></div>
+        <div class="knob right"></div>
+      </div>
+
+      <div class="scroll-paper" id="scrollPaper">
+        <div class="paper-inner">
+          <div class="seal">
+            <svg viewBox="0 0 100 100">
+              <path d="M50,84 C20,62 12,42 24,28 C34,16 46,22 50,32 C54,22 66,16 76,28 C88,42 80,62 50,84 Z" fill="#a8123c" stroke="#fff" stroke-width="2"/>
+            </svg>
+          </div>
+
+          <h2 class="letter-title">A letter for my Memsaab</h2>
+          <div class="letter-body" id="letterBody"></div>
+        </div>
+      </div>
+
+      <div class="scroll-cap bottom">
+        <div class="rod"></div>
+        <div class="knob left"></div>
+        <div class="knob right"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="js/main.js"></script>
+<script src="js/finale.js"></script>
+<script src="js/questions.js"></script>
+<script src="js/loader.js"></script>
+</body>
+</html>

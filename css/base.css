@@ -1,0 +1,35 @@
+/* ===========================
+   GLOBAL / RESET
+   =========================== */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --rose-1: #ff7aa2;
+  --rose-2: #ff3a6d;
+  --rose-3: #a8123c;
+  --cream: #fff5ec;
+  --ink: #2b1216;
+  --paper: #f6e7c8;
+  --paper-2: #ecd5a6;
+  --gold: #b78a3a;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #0d0509;
+  color: var(--ink);
+  font-family: 'Melodrama', serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.screen {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.screen.active { display: flex; }
