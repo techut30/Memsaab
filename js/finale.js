@@ -129,8 +129,6 @@
 <p class="signoff">With profound affection, considerable longing, and an acceptance of all mild threats,</p>
 <p class="signoff">Your boy/friend,</p>
 <p class="signature">Uttakarsh (Bhin/di)</p>
-
-<p class="ps">P.S.—The cramps shall pass, the days shall pass, even the months shall pass. But my devotion, I'm afraid, is a chronic condition for which no remedy exists, and frankly, I would refuse the cure.</p>
     `;
   }
 
