@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Melodrama';
+  src: url('files/Melodrama-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Melodrama';
+  src: url('files/Melodrama-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Melodrama';
+  src: url('files/Melodrama-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Melodrama';
+  src: url('files/Melodrama-Semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Melodrama';
+  src: url('files/Melodrama-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+}
