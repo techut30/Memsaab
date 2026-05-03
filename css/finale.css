@@ -118,17 +118,18 @@
 
 .letter-body {
   font-family: 'Melodrama', serif;
-  font-weight: 400;
-  font-size: clamp(15px, 1.5vw, 18px);
-  line-height: 1.7;
-  color: #3a2010;
+  font-weight: 700;
+  font-size: clamp(17px, 1.7vw, 20px);
+  line-height: 1.75;
+  color: #1a0805;
   white-space: pre-wrap;
+  text-shadow: 0 1px 0 rgba(255,245,225,0.4);
 }
-.letter-body p { margin-bottom: 14px; }
-.letter-body .salutation { font-weight: 600; font-size: 1.1em; }
-.letter-body .signoff { margin-top: 22px; font-style: italic; }
-.letter-body .signature { font-weight: 700; font-size: 1.3em; color: #6b1d2e; margin-top: 6px; }
-.letter-body .ps { margin-top: 18px; font-size: 0.95em; color: #5a2c14; }
+.letter-body p { margin-bottom: 16px; font-weight: 700; }
+.letter-body .salutation { font-weight: 700; font-size: 1.15em; color: #4a0d18; }
+.letter-body .signoff { margin-top: 22px; font-style: italic; font-weight: 600; }
+.letter-body .signature { font-weight: 700; font-size: 1.4em; color: #4a0d18; margin-top: 6px; }
+.letter-body .ps { margin-top: 18px; font-size: 0.95em; color: #3a1006; font-weight: 700; }
 
 @media (max-width: 600px) {
   .paper-inner { padding: 40px 28px 28px; }
